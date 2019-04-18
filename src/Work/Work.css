@@ -1,12 +1,15 @@
 .Work {
-
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 100px;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 
 .card {
 	width: 40vw;
-	height: 40vw;
-	margin-left: 100px;
-	margin-top: 100px;
+	height: 22.5vw;
 	transition: 0.3s;
 	cursor: pointer;
 }
