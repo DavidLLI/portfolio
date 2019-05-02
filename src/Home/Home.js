@@ -10,7 +10,8 @@ class Home extends Component {
       <div className="Home">
         <div className='simple-intro'>
         	Hi! I am Yang (David) Li. <br/>
-        	A UX designer with developer skills.
+        	I design digital artifacts for both reason and emotion. <br/>
+          I worked as both UX Engineer and UX Designer.
         </div>
         <div className='case-study'>
         	<Work/>

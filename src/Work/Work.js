@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './Work.css';
 
+import group4MeThumb from '../Assets/group4MeThumb.png';
+
 class Work extends Component {
 
 	constructor(props) {
@@ -13,7 +15,8 @@ class Work extends Component {
 					'color': '#33CAFF',
 					'hoverColor': '#335EFF',
 					'hover': false,
-					'title': 'Case 1'
+					'title': 'Case 1',
+					'thumb': group4MeThumb
 				},
 				{
 					'color': '#FF7433',
@@ -51,10 +54,16 @@ class Work extends Component {
         	return (
         		<div key={index} 
         			className='card'
-        			style={{backgroundColor: card.hover ? card.hoverColor : card.color}}
         			onMouseEnter={(e) => {this.handleMouseEnter(index)}}
         			onMouseLeave={(e) => {this.handleMouseLeave(index)}}>
-        			{card.hover && card.title}
+        			{card.thumb && 
+        				<img className='thumb-img' src={group4MeThumb} />
+        			}
+        			<div className='card-title'
+        				style={{backgroundColor: card.hoverColor,
+        						opacity: card.hover ? 0.8 : 0}}>
+        				{card.title}
+        			</div>
         		</div>
         	);
         })}
