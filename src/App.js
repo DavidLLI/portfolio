@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
+import Footer from './Footer/Footer';
 import Navigation from './Navigation/Navigation';
 
 import { Routes } from './Data/Data';
@@ -25,6 +26,9 @@ class App extends Component {
                   );
                 })}
               </Switch>
+            </div>
+            <div className='footer'>
+              <Footer />
             </div>
           </div>
         </Router>

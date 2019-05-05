@@ -1,5 +1,6 @@
 import Home from '../Home/Home';
 import About from '../About/About';
+import Group4Me from '../PortfolioContent/Group4Me';
 
 export const Routes = [
   {
@@ -12,5 +13,9 @@ export const Routes = [
     path: "/about",
     name: 'About',
     component: About
+  },
+  {
+    path: "/group4me",
+    component: Group4Me
   }
 ];

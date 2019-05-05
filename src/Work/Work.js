@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import './Work.css';
 
@@ -15,14 +16,17 @@ class Work extends Component {
 					'color': '#33CAFF',
 					'hoverColor': '#335EFF',
 					'hover': false,
-					'title': 'Case 1',
-					'thumb': group4MeThumb
+					'title': 'Group4Me',
+					'description': 'Mobile App <br/>Connect international and local students',
+					'thumb': group4MeThumb,
+					'link': '/group4me'
 				},
 				{
 					'color': '#FF7433',
 					'hoverColor': '#FF4233',
 					'hover': false,
-					'title': 'Case 2'
+					'title': 'Case 2',
+					link: '/group4me'
 				}
 			]
 		};
@@ -50,19 +54,28 @@ class Work extends Component {
   render() {
     return (
       <div className="Work">
+      	<div className='work-title'>
+      		Selected Works
+      	</div>
         {this.state.cards.map((card, index) => {
         	return (
         		<div key={index} 
         			className='card'
         			onMouseEnter={(e) => {this.handleMouseEnter(index)}}
         			onMouseLeave={(e) => {this.handleMouseLeave(index)}}>
+        			<Link 
+	                  to={card.link}>
+	                </Link>
         			{card.thumb && 
         				<img className='thumb-img' src={group4MeThumb} />
         			}
         			<div className='card-title'
         				style={{backgroundColor: card.hoverColor,
         						opacity: card.hover ? 0.8 : 0}}>
-        				{card.title}
+        				<div className='card-title-text'
+        						dangerouslySetInnerHTML={{__html: card.title}} />
+						<div className='card-desc-text'
+        						dangerouslySetInnerHTML={{__html: card.description}} />
         			</div>
         		</div>
         	);
