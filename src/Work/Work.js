@@ -59,25 +59,25 @@ class Work extends Component {
       	</div>
         {this.state.cards.map((card, index) => {
         	return (
-        		<div key={index} 
-        			className='card'
-        			onMouseEnter={(e) => {this.handleMouseEnter(index)}}
-        			onMouseLeave={(e) => {this.handleMouseLeave(index)}}>
-        			<Link 
-	                  to={card.link}>
-	                </Link>
-        			{card.thumb && 
-        				<img className='thumb-img' src={group4MeThumb} />
-        			}
-        			<div className='card-title'
-        				style={{backgroundColor: card.hoverColor,
-        						opacity: card.hover ? 0.8 : 0}}>
-        				<div className='card-title-text'
-        						dangerouslySetInnerHTML={{__html: card.title}} />
-						<div className='card-desc-text'
-        						dangerouslySetInnerHTML={{__html: card.description}} />
-        			</div>
-        		</div>
+        		<Link to={card.link}>
+	        		<div key={index} 
+	        			className='card'
+	        			onMouseEnter={(e) => {this.handleMouseEnter(index)}}
+	        			onMouseLeave={(e) => {this.handleMouseLeave(index)}}>
+
+	        			{card.thumb && 
+	        				<img className='thumb-img' src={group4MeThumb} />
+	        			}
+	        			<div className='card-title'
+	        				style={{backgroundColor: card.hoverColor,
+	        						opacity: card.hover ? 0.8 : 0}}>
+	        				<div className='card-title-text'
+	        						dangerouslySetInnerHTML={{__html: card.title}} />
+							<div className='card-desc-text'
+	        						dangerouslySetInnerHTML={{__html: card.description}} />
+	        			</div>
+	        		</div>
+        		</Link>
         	);
         })}
       </div>

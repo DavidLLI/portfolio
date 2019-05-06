@@ -17,7 +17,7 @@
 	position: relative;
 	margin-right: auto;
 	margin-top: 2vh;
-	margin-left: 5vw;
+	left: 8vw;
 	font-size: 26px;
 	cursor: pointer;
 }
@@ -33,9 +33,9 @@
 
 .menu-item {
 	position: relative;
-	right: 5vw;
-	margin-right: 20px;
-	margin-top: 2vh;
+	right: 8vw;
+	margin-left: 1.5vw;
+	margin-top: 2.5vh;
 	cursor: pointer;
 }
 
