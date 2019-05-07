@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import './Work.css';
 
-import group4MeThumb from '../Assets/group4MeThumb.png';
+import group4MeThumb from '../Assets/group4Me/group4MeThumb.png';
 
 class Work extends Component {
 

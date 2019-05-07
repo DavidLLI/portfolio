@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './Group4Me.css';
+import './CCP.css';
 
 import group4MeWide from '../Assets/group4Me/group4MeWide.png';
 import processImg from '../Assets/group4Me/process.png';
@@ -22,7 +22,7 @@ import group4MeGif1 from '../Assets/group4Me/group4Me1.gif';
 import group4MeGif2 from '../Assets/group4Me/group4Me2.gif';
 import group4MeGif3 from '../Assets/group4Me/group4Me3.gif';
 
-class Group4Me extends Component {
+class CCP extends Component {
   render() {
     return (
       <div className='group4me-portfolio'>
@@ -264,4 +264,4 @@ class Group4Me extends Component {
   }
 }
 
-export default Group4Me;
+export default CCP;

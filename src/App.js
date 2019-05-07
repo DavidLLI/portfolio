@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Footer from './Footer/Footer';
 import Navigation from './Navigation/Navigation';
 
+import ScrollToTop from './ScrollToTop/ScrollToTop';
+
 import { Routes } from './Data/Data';
 
 import './App.css';
@@ -13,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <div>
+          <ScrollToTop>
             <Navigation />
             <div className='portfolio-content'>
               <Switch>
@@ -30,7 +32,7 @@ class App extends Component {
             <div className='footer'>
               <Footer />
             </div>
-          </div>
+          </ScrollToTop>
         </Router>
       </div>
     );
