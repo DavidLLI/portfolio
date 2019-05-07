@@ -3,7 +3,7 @@
 }
 
 .top-block-group4me {
-	height: 86vh;
+	height: 60vh;
 	width: 100%;
 	background-color: #4280D7;
 }
@@ -21,22 +21,24 @@
 	font-weight: bold;
 	font-size: 40px;
 	color: #4280D7;
+	margin-top: 50px;
 }
 
 .group4me-subtitle {
+	margin-top: 50px;
 	font-size: 30px;
 	color: #4280D7;
 }
 
 .group4me-desc {
 	font-size: 17px;
-	
 }
 
 .group4me-thumb-img {
 	position: relative;
-	width: 100vw;
-	height: 45vw;
+	margin-left: calc((100vw - 80vh)/2);
+	width: 80vh;
+	height: 60vh;
 }
 
 
@@ -59,4 +61,9 @@
 
 .project-detail {
 	margin-top: 10px;
+}
+
+.group4me-process {
+	margin-top: 20px;
+	width: 70vw;
 }
