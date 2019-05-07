@@ -6,14 +6,15 @@
 .card {
 	position: relative;
 	max-width: 1600px;
-	width: 52vw;
-	height: 39vw;
+	width: 65vw;
+	height: 39.4vw;
 	max-height: 1200px;
 	transition: 0.3s;
 	cursor: pointer;
 	margin-top: 50px;
 	box-shadow: 1px 1px 5px grey;
-	margin-left: 24vw;
+	margin-left: 17.5vw;
+	margin-right: 17.5vw;
 }
 
 .card-title {

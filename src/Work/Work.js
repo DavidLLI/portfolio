@@ -66,7 +66,7 @@ class Work extends Component {
 	        			onMouseLeave={(e) => {this.handleMouseLeave(index)}}>
 
 	        			{card.thumb && 
-	        				<img className='thumb-img' src={group4MeThumb} />
+	        				<img className='thumb-img' src={card.thumb} />
 	        			}
 	        			<div className='card-title'
 	        				style={{backgroundColor: card.hoverColor,
