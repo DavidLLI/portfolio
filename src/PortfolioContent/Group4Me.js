@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 import './Group4Me.css';
 
-import group4MeThumb from '../Assets/group4MeThumb.png';
+import group4MeWide from '../Assets/group4MeWide.png';
 
 class Group4Me extends Component {
   render() {
     return (
       <div className='group4me-portfolio'>
         {/* Image */}
-        <img className='group4me-thumb-img' src={group4MeThumb} />
+        <img className='group4me-thumb-img' src={group4MeWide} />
 
         {/* Title */}
         <div className='group4me-title group4me-text'>
