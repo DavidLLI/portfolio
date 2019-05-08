@@ -1,14 +1,14 @@
-.group4me-portfolio {
+.ccp-portfolio {
 	text-align: left;
 }
 
-.top-block-group4me {
+.top-block-ccp {
 	height: 60vh;
 	width: 100%;
-	background-color: #4280D7;
+	background-color: #f47a42;
 }
 
-.group4me-text {
+.ccp-text {
 	margin-top: 30px;
 	margin-left: 15vw;
 	margin-right: 15vw;
@@ -17,28 +17,29 @@
 	line-height: 30px;
 }
 
-.group4me-title {
+.ccp-title {
 	font-weight: bold;
 	font-size: 40px;
-	color: #4280D7;
+	color: #f47a42;
 	margin-top: 50px;
 }
 
-.group4me-subtitle {
+.ccp-subtitle {
 	margin-top: 50px;
 	font-size: 30px;
-	color: #4280D7;
+	color: #f47a42;
 }
 
-.group4me-desc {
+.ccp-desc {
 	font-size: 17px;
 }
 
-.group4me-thumb-img {
+.ccp-thumb-img {
 	position: relative;
-	margin-left: calc((100vw - 80vh)/2);
-	width: 80vh;
-	height: 60vh;
+	margin-top: 3vh;
+	margin-left: calc((100vw - 100vh)/2);
+	width: 100vh;
+	height: 54vh;
 }
 
 
@@ -63,61 +64,61 @@
 	margin-top: 10px;
 }
 
-.group4me-process {
+.ccp-process {
 	margin-top: 20px;
 	width: 70vw;
 }
 
-.group4me-interview {
+.ccp-interview {
 	width: 20vw;
 }
 
-.group4me-survey {
+.ccp-survey {
 	width: 40vw;
 }
 
-.group4me-finding {
+.ccp-finding {
 	margin-top: 20px;
 	width: 15vw;
 	height: 13vw;
 }
 
-.group4me-center {
+.ccp-center {
 	text-align: center;
 }
 
-.group4me-persona {
+.ccp-persona {
 	margin-top: 20px;
 	width: 30vw;
 	height: 30vw;
 	margin-right: 5vw;
 }
 
-.group4me-lofi-group {
+.ccp-lofi-group {
 	margin-top: 20px;
 }
 
-.group4me-lofi {
+.ccp-lofi {
 	width: 15vw;
 	height: 30vw;
 	margin-left: 2vw;
 }
 
-.group4me-gif {
+.ccp-gif {
 	width: 15vw;
 	height: 30vw;
 }
 
-.group4me-highfi-group {
+.ccp-highfi-group {
 	margin-top: 40px;
 	margin-left: 10vw;
 }
 
-.group4me-highfi {
+.ccp-highfi {
 	margin-top: 30px;
 }
 
-.group4me-hifi-text {
+.ccp-hifi-text {
 	font-size: 25px;
 	font-weight: bold;
 	margin-left: 3vw;

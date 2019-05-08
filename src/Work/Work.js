@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './Work.css';
 
 import group4MeThumb from '../Assets/group4Me/group4MeThumb.png';
+import ccpThumb from '../Assets/CCP/CCP-thumb.png';
 
 class Work extends Component {
 
@@ -22,11 +23,13 @@ class Work extends Component {
 					'link': '/group4me'
 				},
 				{
-					'color': '#FF7433',
-					'hoverColor': '#FF4233',
+					'color': '#f47a42',
+					'hoverColor': '#f7560c',
 					'hover': false,
-					'title': 'Case 2',
-					link: '/group4me'
+					'title': 'Center for <br/>Community Partnership',
+					'description': 'Website Redesign',
+					'thumb': ccpThumb,
+					link: '/ccp'
 				}
 			]
 		};
@@ -62,6 +65,7 @@ class Work extends Component {
         		<Link to={card.link}>
 	        		<div key={index} 
 	        			className='card'
+	        			style={{backgroundColor: card.color}}
 	        			onMouseEnter={(e) => {this.handleMouseEnter(index)}}
 	        			onMouseLeave={(e) => {this.handleMouseLeave(index)}}>
 

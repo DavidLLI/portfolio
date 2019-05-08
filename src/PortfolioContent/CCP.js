@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import './CCP.css';
 
+import ccpMain from '../Assets/CCP/CCP-main.jpg';
+import ccpProcess from '../Assets/CCP/CCP-process-2.jpg';
+
 import group4MeWide from '../Assets/group4Me/group4MeWide.png';
 import processImg from '../Assets/group4Me/process.png';
 import group4MeInterview from '../Assets/group4Me/group4MeInterview.jpg';
@@ -25,32 +28,34 @@ import group4MeGif3 from '../Assets/group4Me/group4Me3.gif';
 class CCP extends Component {
   render() {
     return (
-      <div className='group4me-portfolio'>
+      <div className='ccp-portfolio'>
         {/* Image */}
-        <div className='top-block-group4me'>
-          <img className='group4me-thumb-img' src={group4MeWide} />
+        <div className='top-block-ccp'>
+          <img className='ccp-thumb-img' src={ccpMain} />
         </div>
 
         {/* Title */}
-        <div className='group4me-title group4me-text'>
-            Group4Me
+        <div className='ccp-title ccp-text'>
+            Center for Community Partnerships
         </div>
 
         {/* Description */}
-        <div className='group4me-desc group4me-text'>
-          Group4Me aims to connect international students and local students socially with the consideration of <br/>
-          cultural & language barrier.
+        <div className='ccp-desc ccp-text'>
+          Center for Community Partnerships (CCP) is a department under the Student Life at the University of Toronto.
+          CCP is responsible for connecting the non-profit organization and the University, 
+          so that the University can engage in Community Learning and the organization can get student placement.
+          Its website has many purposes, but it needed redesign work to be more effective, so CCP reached out to our 
+          faculty for help.
         </div>
 
         {/* Project Overview */}
-        <div className='flex-row group4me-text'>
+        <div className='flex-row ccp-text'>
           <div className='flex-column'>
               <div className='project-title'>
                 Project Type
               </div>
               <div className='project-detail'>
-                Business Venture, UX Research,
-                UX/UI Design
+                Usability Test, Website Redesign, UX/UI Design 
               </div>
               <div className='project-title'>
                 Duration
@@ -64,58 +69,96 @@ class CCP extends Component {
                 Role
               </div>
               <div className='project-detail'>
-                I researched, ideated, designed, prototyped, and evaluated the business venture project.
+                I designed and conducted the usability test. 
+                I revised and designed the new information architecture.
+                I also designed the final high-fidelity mockups.
               </div>
               <div className='project-title'>
                 Skills
               </div>
               <div className='project-detail'>
-                Business Analysis, User Interview, User Survey, Project Management,
-                Sketching, Prototyping, Usability Test, Storytelling
+                Usability Test, User Interview, Card Sorting, 
+                Information Architecture, Project Management, Prototyping, 
+                Stakeholder Management, Constraint Management
               </div>
           </div>
         </div>
 
         {/* Project Process */}
-        <div className='group4me-subtitle group4me-text'>
+        <div className='ccp-subtitle ccp-text'>
             Process
-            <img className='group4me-process' src={processImg} />
+            <img className='ccp-process' src={ccpProcess} />
         </div>
 
-        {/* Research */}
-        <div className='group4me-research group4me-text'>
-          <div className='group4me-subtitle'>
-            Research
+        {/* Preliminary Research */}
+        <div className='ccp-pre-research ccp-text'>
+          <div className='ccp-subtitle'>
+            Preliminary Research
+          </div>
+          <div className='project-title'>
+            Client meeting
+          </div>
+          <div className='project-detail'>
+            We had a kickoff meeting with our client to better understand the 
+            background of the website and the organization CCP. We also got to 
+            hear about the potential improvement in their mind.
           </div>
           <div className='project-title'>
             The problem
           </div>
           <div className='project-detail'>
-            It is typical to see international students staying in their own cultural groups, 
-            and it has made them struggle living abroad. We then researched on this problem
-            area to seek potential solutions.
+            The website should be updated to be easier to navigate and use in terms of 
+            information architecture and visual content. 
+            We should also explore areas where current manual tasks can be automated using the website.
+            <br/><br/>
+            There are also three user segments for the website: student, faculty members, and the community partners.
+            It is very important to make the website easy to navigate for all of them. We are mainly redesigning for 
+            <b> faculty members and the community partners</b>.
           </div>
-          {/* Interview & Survey */}
+        </div>
+          
+          {/* User Research */}
+        <div className='ccp-research ccp-text'>
+          <div className='ccp-subtitle'>
+            User Research
+          </div>
+          <div className='project-title'>
+            Usability Test & Interview
+          </div>
+          <div className='project-detail'>
+            We conduct usability tests and interviews to 5 faculty members and 5 community partners.
+            We found that two user segments have different needs when using the website.
+          </div>
           <div className='flex-row'>
             <div>
               <div className='project-title'>
-                User Interview
+                Faculty Members
               </div>
               <div className='project-detail'>
-                We interviewed 9 international students from 4 different countries.
+                For the faculty members, these are their complaints:<br/>
+                1. They cannot find the university policies on student placement easily.<br/>
+                2. They would like to access the standard forms and course design resources easily.<br/>
+                3. They prefer more straightforward visual instead of block of texts.
+                <br/><br/>
               </div>
-              <img className='group4me-interview' src={group4MeInterview}/>
             </div>
-              <div>
+            <div>
               <div className='project-title'>
-                Survey
+                Community Partners
               </div>
               <div className='project-detail'>
-                Our survey reached to 28 international students from 9 different countries.
+                For the community partners, these are their complaints:<br/>
+                1. They cannot find the university policies on student placement easily.<br/>
+                2. They would like to access the standard forms and course design resources easily.<br/>
+                3. They prefer more straightforward visual instead of block of texts.
+                <br/><br/>
               </div>
-              <img className='group4me-survey' src={group4MeSurvey}/>
             </div>
           </div>
+          <div className='project-title'>
+            Card Sorting
+          </div>
+
           {/* Key Findings */}
           <div className='project-title'>
             Key difficulties
