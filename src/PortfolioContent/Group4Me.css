@@ -82,7 +82,8 @@
 	height: 13vw;
 }
 
-.group4me-center {
+.group4me-caption {
+	vertical-align: top;
 	text-align: center;
 }
 
@@ -90,7 +91,6 @@
 	margin-top: 20px;
 	width: 30vw;
 	height: 30vw;
-	margin-right: 5vw;
 }
 
 .group4me-lofi-group {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Grid, Row, Col } from 'react-flexbox-grid';
 
 import './Group4Me.css';
 
@@ -38,34 +39,40 @@ class Group4Me extends Component {
 
         {/* Description */}
         <div className='group4me-desc group4me-text'>
-          Group4Me aims to connect international students and local students socially with the consideration of <br/>
+          Group4Me aims to connect international students and local students socially with the consideration of
           cultural & language barrier.
         </div>
 
         {/* Project Overview */}
-        <div className='flex-row group4me-text'>
-          <div className='flex-column'>
+        <div className='group4me-text'>
+          <Row between='xs'>
+            <Col xs={4}>
               <div className='project-title'>
                 Project Type
               </div>
               <div className='project-detail'>
-                Business Venture, UX Research,
-                UX/UI Design
+                Business Venture, UX Research, UX/UI Design
               </div>
+            </Col>
+            <Col xs>
+                <div className='project-title'>
+                  Role
+                </div>
+                <div className='project-detail'>
+                  I researched, ideated, designed, prototyped, and evaluated the business venture project.
+                </div>
+            </Col>
+          </Row>
+          <Row between='xs'>
+            <Col xs={4}>
               <div className='project-title'>
                 Duration
               </div>
               <div className='project-detail'>
                 2 months
               </div>
-          </div>
-          <div className='flex-column'>
-              <div className='project-title'>
-                Role
-              </div>
-              <div className='project-detail'>
-                I researched, ideated, designed, prototyped, and evaluated the business venture project.
-              </div>
+            </Col>
+            <Col xs>
               <div className='project-title'>
                 Skills
               </div>
@@ -73,7 +80,8 @@ class Group4Me extends Component {
                 Business Analysis, User Interview, User Survey, Project Management,
                 Sketching, Prototyping, Usability Test, Storytelling
               </div>
-          </div>
+            </Col>
+          </Row>
         </div>
 
         {/* Project Process */}
@@ -96,8 +104,8 @@ class Group4Me extends Component {
             area to seek potential solutions.
           </div>
           {/* Interview & Survey */}
-          <div className='flex-row'>
-            <div>
+          <Row between='xs'>
+            <Col xs>
               <div className='project-title'>
                 User Interview
               </div>
@@ -105,8 +113,8 @@ class Group4Me extends Component {
                 We interviewed 9 international students from 4 different countries.
               </div>
               <img className='group4me-interview' src={group4MeInterview}/>
-            </div>
-              <div>
+            </Col>
+            <Col xs>
               <div className='project-title'>
                 Survey
               </div>
@@ -114,35 +122,43 @@ class Group4Me extends Component {
                 Our survey reached to 28 international students from 9 different countries.
               </div>
               <img className='group4me-survey' src={group4MeSurvey}/>
-            </div>
-          </div>
+            </Col>
+          </Row>
           {/* Key Findings */}
           <div className='project-title'>
             Key difficulties
           </div>
-          <div className='flex-row'> 
-            <img className='group4me-finding' src={group4MeTeach}/>
-            <img className='group4me-finding' src={group4MeSocial}/>
-            <img className='group4me-finding' src={group4MeHelp}/>
-          </div>
+          <Row between='xs'> 
+            <Col xs>
+              <img className='group4me-finding' src={group4MeTeach}/>
+            </Col>
+            <Col xs>
+              <img className='group4me-finding' src={group4MeSocial}/>
+            </Col>
+            <Col xs>
+              <img className='group4me-finding' src={group4MeHelp}/>
+            </Col>
+          </Row>
           {/* Persona */}
           <div className='project-title'>
             Meet our persona, Tommy!
           </div>
-          <div className='flex-row'>
-            <div>
+          <Row between='xs'>
+            <Col xs className='group4me-caption'>
               <img className='group4me-persona' src={group4MeEmpathy}/>
-              <div className='project-detail group4me-center'>
+              <div className='project-detail'>
                 Empathy Map
               </div>
-            </div>
-            <div>
-              <img className='group4me-persona' src={group4MePersona}/>
-              <div className='project-detail group4me-center'>
-                Persona
+            </Col>
+            <Col xs className='group4me-caption'>
+              <div>
+                <img className='group4me-persona' src={group4MePersona}/>
+                <div className='project-detail'>
+                  Persona
+                </div>
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
         </div>
 
         {/* Ideate */}
@@ -157,20 +173,21 @@ class Group4Me extends Component {
             We then vote and prioritize the ideas based on impact and feasibility shown on the right.
             I threw in some machine learning related solutions, but they have privacy and feasibility issues with them.
           </div>
-          <div className='flex-row'>
-            <div>
+          <Row between='xs'>
+            <Col xs className='group4me-caption'>
               <img className='group4me-persona' src={group4MeIdeas}/>
-              <div className='project-detail group4me-center'>
+              <div className='project-detail'>
                 Big Ideas
               </div>
-            </div>
-            <div>
+            </Col>
+            <Col xs className='group4me-caption'>
               <img className='group4me-persona' src={group4MePriority}/>
-              <div className='project-detail group4me-center'>
+              <div className='project-detail'>
                 Prioritization
               </div>
-            </div>
-          </div>
+            </Col>
+          </Row>
+
           <div className='project-detail'>
             As you can see on the prioritization grid, the idea of social platform really stood out 
             because it will be able to solve the pain points of our users and it is rather easy to impplement.
@@ -190,28 +207,36 @@ class Group4Me extends Component {
           </div>
           {/* Low-fi */}
           <div>
-            <div className='flex-row group4me-lofi-group'>
-              <div className='project-detail'>
-                1. Small group <b>matching</b> with both international and local students who have similar interests.
-              </div>
-              <img className='group4me-lofi' src={group4MeInterest} />
-              <img className='group4me-lofi' src={group4MeMatch} />
-            </div>
+            <Row between='xs sm' middle='sm'>
+              <Col sm>
+                <div className='project-detail'>
+                  1. Small group <b>matching</b> with both international and local students who have similar interests.
+                </div>
+              </Col>
+              <Col xs>
+                <img className='group4me-lofi' src={group4MeInterest} />
+                <img className='group4me-lofi' src={group4MeMatch} />
+              </Col>
+            </Row>
 
-            <div className='flex-row group4me-lofi-group'>
-              <div className='project-detail'>
+            <Row between='xs sm' middle='sm'>
+              <Col sm>
                 2. Users identity verification for high level of <b>security</b> and trust.
-              </div>
-              <img className='group4me-lofi' src={group4MeSecure} />
-            </div>
+              </Col>
+              <Col xs>
+                <img className='group4me-lofi' src={group4MeSecure} />
+              </Col>
+            </Row>
 
-            <div className='flex-row group4me-lofi-group'>
-              <div className='project-detail'>
+            <Row between='xs sm' middle='sm'>
+              <Col sm>
                 3. Guided conversations and activity <b>prompts</b> for the group offline meetup.
-              </div>
-              <img className='group4me-lofi' src={group4MeChat} />
-              <img className='group4me-lofi' src={group4MeActivity} />
-            </div>
+              </Col>
+              <Col xs>
+                <img className='group4me-lofi' src={group4MeChat} />
+                <img className='group4me-lofi' src={group4MeActivity} />
+              </Col>
+            </Row>
           </div>
           
         </div>
