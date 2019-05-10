@@ -25,6 +25,7 @@
 }
 
 .ccp-subtitle {
+	font-weight: bold;
 	margin-top: 50px;
 	font-size: 30px;
 	color: #f47a42;
@@ -40,8 +41,13 @@
 	margin-left: calc((100vw - 100vh)/2);
 	width: 100vh;
 	height: 54vh;
+	box-shadow: 3px 3px 10px grey;
 }
 
+.ccp-caption {
+	vertical-align: top;
+	text-align: center;
+}
 
 .flex-column {
 	display: flex;
@@ -56,6 +62,7 @@
 }
 
 .project-title {
+	font-weight: bold;
 	margin-top: 30px;
 	font-size: 25px;
 }
@@ -64,8 +71,15 @@
 	margin-top: 10px;
 }
 
+.project-quote {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 22px;
+	text-align: center;
+}
+
 .ccp-process {
-	margin-top: 20px;
+	margin-top: 40px;
 	width: 70vw;
 }
 
@@ -89,19 +103,35 @@
 
 .ccp-persona {
 	margin-top: 20px;
-	width: 30vw;
-	height: 30vw;
-	margin-right: 5vw;
+	width: 34vw;
+	height: 22vw;
+}
+
+.ccp-IA {
+	margin-top: 20px;
+	width: 34vw;
+	height: 20vw;
+}
+
+.ccp-label-change {
+	margin-top: 20px;
+	width: 45vw;
+	height: 25vw;
 }
 
 .ccp-lofi-group {
 	margin-top: 20px;
 }
 
-.ccp-lofi {
-	width: 15vw;
-	height: 30vw;
-	margin-left: 2vw;
+.ccp-sketch {
+	margin-top: 30px;
+	width: 22vw;
+	height: 15vw;
+}
+
+.ccp-proto {
+	width: 33vw;
+	height: 20vw;
 }
 
 .ccp-gif {

@@ -14,8 +14,7 @@ class Home extends Component {
             <br/>
           </label>
           <label className='small-intro'>
-            I design digital artifacts for both reason and emotion <br/>
-            through user research, visual design, prototyping, and usability testing. <br/>
+            I design digital artifacts for both reason and emotion through user research, visual design, prototyping, and usability testing. <br/>
             <br/>
             I am both a UX Designer and a UX Engineer.
           </label>

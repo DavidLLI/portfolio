@@ -25,6 +25,7 @@
 }
 
 .group4me-subtitle {
+	font-weight: bold;
 	margin-top: 50px;
 	font-size: 30px;
 	color: #4280D7;
@@ -55,6 +56,7 @@
 }
 
 .project-title {
+	font-weight: bold;
 	margin-top: 30px;
 	font-size: 25px;
 }

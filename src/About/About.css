@@ -1,0 +1,50 @@
+.self-photo {
+	width: 25vw;
+	height: 40vw;
+}
+
+.About {
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+.resume-button {
+	border-style: solid;
+  	border-width: 1px;
+  	width: 100px;
+  	height: 40px;
+  	text-align: center;
+  	line-height: 40px;
+  	border-radius: 10px;
+  	color: #4280D7;
+  	border-color: #4280D7;
+  	cursor: pointer;
+  	margin-left: 10vw;
+  	margin-top: 30px;
+  	transition: 0.3s;
+}
+
+.resume-button:hover {
+	background-color: #4280D7;
+  	color: white;
+}
+
+.self-intro {
+	text-align: left;
+	position: relative;
+	top: 50px;
+}
+
+.self-desc-title {
+	font-weight: bold;
+	font-size: 28px;
+	color: #4280D7;
+	margin-top: 50px;
+}
+
+.self-desc-detail {
+	font-size: 18px;
+	margin-top: 50px;
+	line-height: 30px;
+	color: #808080;
+}

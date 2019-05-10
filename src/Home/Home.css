@@ -2,13 +2,15 @@
 
 .simple-intro {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 24px;
+	font-size: 19px;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
 	text-align: left;
 	position: relative;
 	margin-left: 15vw;
 	margin-right: 15vw;
+	line-height: 30px;
+	color: #808080;
 }
 
 .big-intro {
