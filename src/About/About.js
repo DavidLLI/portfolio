@@ -4,8 +4,16 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 import './About.css';
 
 import selfPhoto from '../Assets/About/Li-1.jpg';
+import seattlePhoto from '../Assets/About/me.jpeg';
+import dogPhoto from '../Assets/About/my-dog.jpeg';
+import nbaPhoto from '../Assets/About/nba-game.jpeg';
+import { ReactComponent as DesignSVG } from '../Assets/About/website-design-symbol.svg';
+import { ReactComponent as CodeSVG } from '../Assets/About/data.svg';
+import { ReactComponent as PubSpeakingSVG } from '../Assets/About/education.svg';
+import Resume from '../Assets/Resume.pdf';
 
 class About extends Component {
+
   render() {
     return (
       <div className="About">
@@ -13,7 +21,8 @@ class About extends Component {
         	<Row between='xs'>
         		<Col xs>
         			<img className='self-photo' src={selfPhoto} />
-        			<div className='resume-button'>
+        			<div className='resume-button'
+        				onClick={() => window.open(Resume)}>
         				Resume
         			</div>
         		</Col>
@@ -39,8 +48,91 @@ class About extends Component {
         	</Row>
         </div>
 
-        <div className='next-section'>
+        <div className='about-skill-section'>
+        	<div className='about-skill-title'>
+        		Skills
+        	</div>
+        	<Row between='xs'>
+        		<Col xs className='about-caption'>
+        			<div className='about-skill-subtitle'>
+		            	Design
+		            </div>
+        			<DesignSVG className='about-skill-svg'/>
+        			<div className='about-detail'>
+		            	User Research
+		            </div>
+		            <div className='about-detail'>
+		            	Prototyping
+		            </div>
+		            <div className='about-detail'>
+		            	Visual Design
+		            </div>
+		            <div className='about-detail'>
+		            	Figma
+		            </div>
+		            <div className='about-detail'>
+		            	Sketch
+		            </div>
+        		</Col>
+        		<Col xs className='about-caption'>
+        			<div className='about-skill-subtitle'>
+		            	Programming
+		            </div>
+        			<CodeSVG className='about-skill-svg'/>
+        			<div className='about-detail'>
+		            	Javascript
+		            </div>
+		            <div className='about-detail'>
+		            	React.js
+		            </div>
+		            <div className='about-detail'>
+		            	Java
+		            </div>
+		            <div className='about-detail'>
+		            	Algorithm
+		            </div>
+        		</Col>
+        		<Col xs className='about-caption'>
+        			<div className='about-skill-subtitle'>
+		            	Presentation
+		            </div>
+        			<PubSpeakingSVG className='about-skill-svg'/>
+        			<div className='about-detail'>
+		            	Storytelling
+		            </div>
+		            <div className='about-detail'>
+		            	Stakeholder Meeting
+		            </div>
+		            <div className='about-detail'>
+		            	Idea Pitching
+		            </div>
+        		</Col>
+        	</Row>
+        </div>
 
+        <div className='photo-section'>
+        	<Row between='xs'>
+        		<Col xs className='about-caption'>
+        			<img className='about-photo1' src={seattlePhoto} />
+        			<div className='about-detail'>
+        				This is me in Seattle.
+        			</div>
+        		</Col>
+        		<Col xs className='about-caption'>
+        			<img className='about-photo1' src={dogPhoto} />
+        			<div className='about-detail'>
+        				Say hi Blake!
+        			</div>
+        		</Col>
+        	</Row>
+        	<Row between='xs' className='about-caption'>
+        		<Col xs className='about-caption'>
+        			<img className='about-photo2' src={nbaPhoto} />
+        			<div className='about-detail'>
+        				Let's go Raptors!
+        			</div>
+        		</Col>
+        	</Row>
         </div>
 
       </div>

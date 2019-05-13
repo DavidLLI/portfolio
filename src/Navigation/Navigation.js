@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { withRouter } from "react-router-dom";
 import { Routes } from '../Data/Data';
 
+import Resume from '../Assets/Resume.pdf';
+
 import './Navigation.css';
 
 class Navigation extends Component {
@@ -23,6 +25,9 @@ class Navigation extends Component {
             </Link>
           </div>
           {Routes.map((data, index) => {
+            if (!data.name) {
+              return;
+            }
             let classnames = '';
             if (pathname === data.path) {
               classnames = ' menu-link-selected'
@@ -37,6 +42,9 @@ class Navigation extends Component {
               </div>
             );
           })}
+          <div className='menu-item'>
+            <a className={'menu-link'} href = {Resume} target = "_blank">Resume</a>
+          </div>
         </div>
         
     );
