@@ -13,18 +13,25 @@ class Footer extends Component {
     return (
     	<div className='footer'>
     		<div className='footer-contact'>
-	      		<div className='contact-button'>
+	      		<div className='contact-button'
+	      			onClick={() => window.open('mailto:david.yli310@gmail.com')}>
 	      			Let's Talk
 	      		</div>
 	      		<Row between='xs' className='contact-icons'>
 	      			<Col xs>
-	      				<LinkedInSVG className='contact-svg'/>
+	      				<a href={'https://www.linkedin.com/in/yang-david-li-051074a9/'} target='_blank'>
+	      					<LinkedInSVG className='contact-svg'/>
+	      				</a>
 	      			</Col>
 	      			<Col xs>
-	      				<EmailSVG className='contact-svg'/>
+	      				<a href={'mailto:david.yli310@gmail.com'} target='_blank'>
+	      					<EmailSVG className='contact-svg'/>
+	      				</a>
 	      			</Col>
 	      			<Col xs>
-	      				<GithubSVG className='contact-svg'/>
+	      				<a href={'https://github.com/DavidLLI'} target='_blank'>
+	      					<GithubSVG className='contact-svg'/>
+	      				</a>
 	      			</Col>
 	      		</Row>
 	      	</div>
